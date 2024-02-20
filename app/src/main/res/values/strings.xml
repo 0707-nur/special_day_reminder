@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Special Day Reminder</string>
+    <string name="edittext_hint_size"><font size="18">      Setup Notification</font></string>
+</resources>

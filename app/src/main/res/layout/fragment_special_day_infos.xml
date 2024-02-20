@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SpecialDayInfos">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add Special Day"
+            android:layout_marginLeft="16dp"
+            android:textSize="32sp"
+            android:textColor="@color/black"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginLeft="112dp"
+            android:background="@null"
+            android:src="@drawable/baseline_close_24" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/add_special_day_bg"
+            android:drawableStart="@drawable/baseline_edit_24"
+            android:drawablePadding="16dp"
+            android:drawableTint="@color/purple"
+            android:hint="Add Tag" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:drawableStart="@drawable/baseline_event_24"
+            android:drawableTint="@color/purple"
+            android:hint="Choose Date"
+            android:layout_marginLeft="12dp"
+            android:drawablePadding="16dp"
+            android:background="@drawable/add_special_day_bg"
+            android:layout_marginTop="16dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconTint="@color/purple"
+            app:endIconDrawable="@drawable/baseline_keyboard_arrow_down_24"
+            app:startIconDrawable="@drawable/baseline_cake_24"
+            app:startIconTint="@color/purple"
+            android:hint=" "
+            android:layout_marginTop="12dp">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="         Choose Theme"
+                android:background="@drawable/add_special_day_bg"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Add Note"
+            android:gravity="center_vertical"
+            android:textColor="#BF919191"
+            android:textSize="18dp"
+            android:drawableStart="@drawable/baseline_edit_24"
+            android:drawableTint="@color/purple"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+
+            android:drawablePadding="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:background="@drawable/add_note_bg"
+            android:layout_margin="12dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:endIconTint="@color/purple"
+            app:endIconDrawable="@drawable/baseline_keyboard_arrow_down_24"
+            app:startIconDrawable="@drawable/baseline_notifications_24"
+            app:startIconTint="@color/purple"
+            android:hint=" "
+            android:layout_marginTop="4dp">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="         Setup Notification"
+                android:background="@drawable/add_special_day_bg"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="144dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:text="Done"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:background="@drawable/sign_in_button"
+            app:backgroundTint="@color/yellow"
+            android:elevation="24dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
